@@ -1,0 +1,16 @@
+{
+  "name": "dripactivity",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ cryptocultcurt/dripactivity",
+    "create-local": "graph create --node http://localhost:8020/ cryptocultcurt/dripactivity",
+    "remove-local": "graph remove --node http://localhost:8020/ cryptocultcurt/dripactivity",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 cryptocultcurt/dripactivity"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.25.1",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}
